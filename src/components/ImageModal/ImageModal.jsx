@@ -21,7 +21,8 @@ const ImageModal = ({ isOpen, onClose, imageData }) => {
   }, [onClose]);
 
   return (
-    <Modal
+      <Modal
+          
       isOpen={isOpen}
       onRequestClose={onClose}
       className={styles.modal}

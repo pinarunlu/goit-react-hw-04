@@ -25,7 +25,7 @@ const App = () => {
         `https://api.unsplash.com/search/photos?query=${searchQuery}&page=${pageNumber}&per_page=12`,
         {
           headers: {
-            Authorization: `Client-ID Khb53iCydwKjzxLxsPwW7nOTmXGj8CVb3baU7Hh5YSU`, // Kendi API key'inizi buraya eklemelisiniz
+            Authorization: `Client-ID Khb53iCydwKjzxLxsPwW7nOTmXGj8CVb3baU7Hh5YSU`,
           },
         }
       );

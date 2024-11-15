@@ -1,4 +1,4 @@
-/* LoadMoreBtn.module.css */
+
 .loadMoreBtn {
     padding: 10px 20px;
     background-color: #007bff;
@@ -7,7 +7,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-  
+    margin-left: 600px; 
 }
 
 .loadMoreBtn:hover {
