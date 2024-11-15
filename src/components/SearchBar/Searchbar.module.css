@@ -1,0 +1,9 @@
+.searchInput{
+  
+    padding: 10px 20px;
+
+}
+.searchForm{
+    display: flex;
+    gap: 10px;
+}
