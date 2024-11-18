@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-hot-toast';
 import styles from './Searchbar.module.css';
 
 const SearchBar = ({ onSubmit }) => {
@@ -7,16 +8,18 @@ const SearchBar = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (query.trim() === '') {
-      alert('Please enter a search term.');
+      toast.error('Please enter a search term.', {
+        position: 'top-center',
+      });
       return;
     }
-    onSubmit(query); // Burada onSubmit fonksiyonu kullanılıyor
+    onSubmit(query); // onSubmit fonksiyonunu çağır
   };
 
   return (
-    <form className={styles.searchForm}  onSubmit={handleSubmit}>
-          <input
-          className={styles.searchInput}   
+    <form className={styles.searchForm} onSubmit={handleSubmit}>
+      <input
+        className={styles.searchInput}
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
